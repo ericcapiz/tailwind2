@@ -7,7 +7,7 @@ const Nav = () => {
   const handleNav = () => setNav(!nav);
 
   return (
-    <div className="w-screen h-[80px] z-index10 bg-zinc-200 fixed drop-shadow-lg">
+    <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex justify-between items-center w-full h-full">
         <div className="flex items-center">
           <h1 className="text-3xl font-bold mr-4 sm:text-4xl">BRAND</h1>
@@ -25,7 +25,7 @@ const Nav = () => {
           </button>
           <button className="px-8 py-3">Sign Out</button>
         </div>
-        <div onClick={handleNav} className="md:hidden">
+        <div onClick={handleNav} className="md:hidden mr-4">
           {!nav ? <MenuIcon className="w-5" /> : <XIcon className="w-5" />}
         </div>
       </div>
